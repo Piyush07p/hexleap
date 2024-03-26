@@ -14,16 +14,16 @@ export default function Home() {
         <nav className={`h-[3rem] w-full ${theme?"bg-[#191919] text-white":"bg-[#F7F7F8] text-black"} px-[4rem] flex items-center justify-end `}>
                 <h1 className="border-2 px-2 rounded  cursor-pointer " onClick={changeTheme}>Click for {theme?"light":"dark"} mode</h1>
         </nav>
-          <section className={`w-full h-screen flex flex-col  items-center ${theme?"bg-[#191919]" :"bg-[#F7F7F8]"} p-[3rem]`}>
+          <section className={`w-full p-2 flex flex-col  items-center ${theme?"bg-[#191919]" :"bg-[#F7F7F8]"} p-[3rem]`}>
               <div className="w-full px-[10rem] py-2">
                  <span  className={`border-b-2 text-left font-semibold border-blue-400 ${theme?"text-white" :"text-black"}`}>Sports</span>
               </div>
-              <div className=" flex p-2">
+              <div className=" flex p-2 flex-wrap justify-center">
                     {
                         sportsData.map((elem)=>{
                             return(
                                 <>
-                                    <div className={`w-[13rem]  mx-2  ${theme?"bg-[#3B3E47]" :"bg-white"} p-[0.8rem]  text-white shadow-xl `}>
+                                    <div className={`w-[13rem]  mx-2 my-2 ${theme?"bg-[#3B3E47]" :"bg-white"} p-[0.8rem]  text-white shadow-xl `}>
                                         <div className="h-[77%]">
                                             <img src={elem.image} className="object-contain  h-[100%]  w-full" alt="" />
                                         </div>
@@ -70,19 +70,19 @@ export default function Home() {
 
           {/* --------------------------------------(section-2)--------------------------------------- */}
 
-          <section className={`w-full h-screen flex flex-col  items-center ${theme?"bg-[#191919]" :"bg-[#F7F7F8]"} p-[3rem]`}>
-              <span  className={`font-bold text-[3rem] border-blue-400 ${theme?"text-white" :"text-black"}`}>Collection Spotlight</span>
+          <section className={`w-full p-2 flex flex-col  items-center ${theme?"bg-[#191919]" :"bg-[#F7F7F8]"} p-[3rem]`}>
+              <span  className={` font-bold text-[1.3rem] sm:text-[2rem] md:text-[3rem] border-blue-400 ${theme?"text-white" :"text-black"}`}>Collection Spotlight</span>
               <p className={`${theme?"text-white" :"text-black"} w-[60%] my-6  text-center text-[0.8rem]`}>Discover extraordinary moments with our Spotlight Collection metatickets—exclusive access to premium events for an unforgettable experience. Grab yours today!</p>
 
-              <div className="flex p-2 relative">
-                <div  className="flex items-center absolute left-[-5rem] top-1/2 -translate-y-1/2 ">
+              <div className="flex p-2 relative flex-wrap justify-center">
+                <div  className="flex items-center absolute lg:left-[-5rem] left-[-0.5rem] top-1/2 -translate-y-1/2 ">
                     <img className="border-2 p-2 border-blue-500" src="./img/leftArrow.png" alt="" />
                 </div>
                     {
                         sportsData2.map((elem)=>{
                             return(
                                 <>
-                                    <div className={`w-[14rem] mx-6 relative  ${theme?"bg-[#3B3E47]" :"bg-white"}   text-white shadow-xl `}>
+                                    <div className={`w-[14rem] mx-6 my-2 relative  ${theme?"bg-[#3B3E47]" :"bg-white"}   text-white shadow-xl `}>
                                         <div className="">
                                             <img src={elem.image} className="object-contain  h-[100%]  w-full" alt="" />
                                         </div>
@@ -102,7 +102,7 @@ export default function Home() {
                             )
                         })
                     }
-                <div className="flex items-center absolute right-[-5rem] top-1/2 -translate-y-1/2 ">
+                <div className="flex items-center absolute lg:right-[-5rem] right-[-0.5rem] top-1/2 -translate-y-1/2 ">
                     <img  className="border-2 p-2   border-blue-500" src="./img/rightArrow.png" alt="" />
                 </div>
                      
