@@ -12,7 +12,7 @@ export default function Home() {
   return (
       <>
         <nav className={`h-[3rem] w-full ${theme?"bg-[#191919] text-white":"bg-[#F7F7F8] text-black"} px-[4rem] flex items-center justify-end `}>
-                <h1 className="border-2 px-2 rounded  cursor-pointer " onClick={changeTheme}>Click for {theme?"light":"dark"} mode</h1>
+                <h1 className="border-2 px-2 rounded cursor-pointer " onClick={changeTheme}>Click for {theme?"light":"dark"} mode</h1>
         </nav>
           <section className={`w-full p-2 flex flex-col  items-center ${theme?"bg-[#191919]" :"bg-[#F7F7F8]"} p-[3rem]`}>
               <div className="w-full px-[10rem] py-2">
@@ -45,7 +45,7 @@ export default function Home() {
                             )
                         })
                     }
-                     <div className={`w-[13rem] mx-2  ${theme?"bg-[#3B3E47]" :"bg-white"} p-[0.8rem]  text-white shadow-2xl `}>
+                     <div className={`w-[13rem] mx-2 my-2 box-border  ${theme?"bg-[#3B3E47]" :"bg-white"} p-[0.8rem]  text-white shadow-2xl `}>
                                         <div className="h-[45%] relative">
                                             <img src={"./img/advertis.png"} className="object-contain  h-[100%]  w-full" alt="" />
                                             <img className="absolute right-0 top-2" src="./img/Ad_logo.png" alt="" />
@@ -55,11 +55,10 @@ export default function Home() {
                                                   <p className="">
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum esse mollitia 
                                                     beatae quos aperiam placeat, ullam nihil dolores fuga explicabo consequatur 
-                                                    dolorum atque! Eum quas corporis labore aliquid error sapiente.
+                                                    dolorum atque! Eum quas corporis.
                                                   </p>
-
                                         </div>
-                                    </div>
+                     </div>
 
                      
               </div>
